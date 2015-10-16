@@ -1,0 +1,37 @@
+<idea-plugin version="2">
+  <id>com.dmitz.intellij.plugin.websocket.client</id>
+  <name>Websocket Client</name>
+  <version>0.1</version>
+  <vendor email="dmit.zarubin@gmail.com" url="https://github.com/dmitz">Dmitriy Zarubin</vendor>
+
+  <description><![CDATA[
+      Simple websocket client for Intellij IDEA.<br>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Initial release.<br>
+    ]]>
+  </change-notes>
+
+  <idea-version since-build="131" />
+
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="Websocket Client" anchor="bottom" icon="/actions/lightning.png"
+                factoryClass="com.dmitz.intellij.plugin.websocket.client.ui.WebsocketClientToolWindowFactory" />
+  </extensions>
+
+  <actions>
+    <group id="WebsocketClient.Toolbar">
+
+      <action id="ConnectAction" icon="/actions/execute.png"
+              class="com.dmitz.intellij.plugin.websocket.client.action.ConnectAction"/>
+
+      <action id="DisconnectAction" icon="/actions/cancel.png"
+              class="com.dmitz.intellij.plugin.websocket.client.action.DisconnectAction"/>
+
+      <action id="SendAction" icon="/actions/redo.png"
+              class="com.dmitz.intellij.plugin.websocket.client.action.SendAction"/>
+
+    </group>
+  </actions>
+</idea-plugin>

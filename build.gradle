@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+targetCompatibility = 1.7
+sourceCompatibility = 1.7
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile 'com.google.inject:guice:4.0'
+}
