@@ -8,3 +8,10 @@
 *.war
 *.ear
 hs_err_pid*
+*.zip
+
+.gradle
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
